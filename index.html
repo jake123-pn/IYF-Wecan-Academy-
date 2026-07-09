@@ -1,1 +1,590 @@
-mm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IYF Wecan Academy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<h2>IYF Wecan Academy</h2>
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>
+Empowering Youth Through Education
+</h1>
+
+<p>
+
+Professional Skills • Leadership • Character Development
+
+</p>
+
+<button onclick="showRegister()">
+
+Create Account
+
+</button>
+
+<p>
+
+Already have an account?
+
+<a href="#" onclick="showLogin()">
+
+Sign In
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- REGISTER -->
+
+<section id="register-section">
+
+<div class="card">
+
+<h2>Create Account</h2>
+
+<form id="register-form">
+
+<input
+type="text"
+id="fullname"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required>
+
+<select id="gender">
+
+<option>Select Gender</option>
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+<input
+type="number"
+id="age"
+placeholder="Age"
+min="16"
+max="100">
+
+<select id="course">
+
+<option>Select Course</option>
+
+<option>Programming</option>
+
+<option>Beauty</option>
+
+<option>Hair Dressing</option>
+
+<option>Theology</option>
+
+<option>CCTV Installation</option>
+
+<option>Computer Packages</option>
+
+<option>Video Editing</option>
+
+<option>Catering</option>
+
+<option>French</option>
+
+</select>
+
+<input
+type="password"
+id="password"
+placeholder="Password"
+required>
+
+<label>
+
+<input
+type="checkbox"
+onclick="showPassword()">
+
+Show Password
+
+</label>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+<p>
+
+Already have an account?
+
+<a href="#" onclick="showLogin()">
+
+Sign In
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- LOGIN -->
+
+<section id="login-section">
+
+<div class="card">
+
+<h2>Sign In</h2>
+
+<form id="login-form">
+
+<input
+type="email"
+id="login-email"
+placeholder="Email"
+required>
+
+<input
+type="password"
+id="login-password"
+placeholder="Password"
+required>
+
+<label>
+
+<input
+type="checkbox"
+onclick="showLoginPassword()">
+
+Show Password
+
+</label>
+
+<button type="submit">
+
+Sign In
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= HOME ================= -->
+
+<section id="home">
+
+<div class="home-banner">
+
+<h1>Welcome to IYF Wecan Academy</h1>
+
+<p>
+We empower young people through education,
+leadership and practical skills training.
+</p>
+
+<a href="#services" class="btn">Explore Courses</a>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Us</h2>
+
+<p>
+
+IYF Wecan Academy is committed to empowering
+young people through quality education,
+leadership training and practical skills.
+
+</p>
+
+<div class="about-cards">
+
+<div class="about-card">
+
+<h3>🎯 Mission</h3>
+
+<p>
+To develop skilled,
+responsible and innovative leaders.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>🌍 Vision</h3>
+
+<p>
+To become Africa's leading
+skills development academy.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>⭐ Core Values</h3>
+
+<p>
+Integrity, Excellence,
+Innovation and Teamwork.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<h2>Our Courses</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+<h3>💻 Programming</h3>
+<p>HTML, CSS, JavaScript, Python and Web Development.</p>
+</div>
+
+<div class="course-card">
+<h3>💄 Beauty</h3>
+<p>Professional beauty therapy and skincare.</p>
+</div>
+
+<div class="course-card">
+<h3>💇 Hair Dressing</h3>
+<p>Modern salon and barbering skills.</p>
+</div>
+
+<div class="course-card">
+<h3>📹 Video Editing</h3>
+<p>Create professional videos using editing software.</p>
+</div>
+
+<div class="course-card">
+<h3>📷 CCTV Installation</h3>
+<p>Install and maintain security systems.</p>
+</div>
+
+<div class="course-card">
+<h3>🍽 Catering</h3>
+<p>Professional cooking and hospitality training.</p>
+</div>
+
+<div class="course-card">
+<h3>📖 Theology</h3>
+<p>Biblical studies and Christian leadership.</p>
+</div>
+
+<div class="course-card">
+<h3>🇫🇷 French</h3>
+<p>Learn French for work, travel and communication.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section id="stats">
+
+<div class="stat">
+
+<h1>5000+</h1>
+
+<p>Students</p>
+
+</div>
+
+<div class="stat">
+
+<h1>20+</h1>
+
+<p>Courses</p>
+
+</div>
+
+<div class="stat">
+
+<h1>120+</h1>
+
+<p>Professional Trainers</p>
+
+</div>
+
+<div class="stat">
+
+<h1>98%</h1>
+
+<p>Success Rate</p>
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section id="testimonials">
+
+<h2>Student Testimonials</h2>
+
+<div class="testimonial">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+
+"IYF Wecan Academy changed my life.
+I gained programming skills and found employment."
+
+</p>
+
+<strong>— Mary Wanjiku</strong>
+
+</div>
+
+<div class="testimonial">
+
+<h3>⭐⭐⭐⭐⭐</h3>
+
+<p>
+
+"The trainers are supportive and
+the learning environment is excellent."
+
+</p>
+
+<strong>— John Maina</strong>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<div class="container">
+
+<h2>Our Gallery</h2>
+
+<p>Take a look at some of our learning activities.</p>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="images/programming.jpg" alt="Programming Class">
+</div>
+
+<div class="gallery-item">
+<img src="images/beauty.jpg" alt="Beauty Class">
+</div>
+
+<div class="gallery-item">
+<img src="images/hair.jpg" alt="Hair Dressing">
+</div>
+
+<div class="gallery-item">
+<img src="images/cctv.jpg" alt="CCTV Installation">
+</div>
+
+<div class="gallery-item">
+<img src="images/students.jpg" alt="Students">
+</div>
+
+<div class="gallery-item">
+<img src="images/graduation.jpg" alt="Graduation">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Contact Us</h2>
+
+<p>We'd love to hear from you.</p>
+
+<form class="contact-form">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<input
+type="text"
+placeholder="Subject"
+required>
+
+<textarea
+placeholder="Write your message here..."
+rows="6"
+required></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+<div class="contact-info">
+
+<h3>📍 Location</h3>
+
+<p>Nairobi, Kenya</p>
+
+<h3>📞 Phone</h3>
+
+<p>+254 753090452</p>
+
+<h3>📧 Email</h3>
+
+<p>info@iyfwecanacademy.org</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-content">
+
+<h2>IYF Wecan Academy</h2>
+
+<p>
+Empowering youth through education,
+leadership and practical skills.
+</p>
+
+<div class="social-links">
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">YouTube</a>
+
+<a href="#">TikTok</a>
+
+</div>
+
+<br>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+<p>
+
+© 2025 IYF Wecan Academy.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
