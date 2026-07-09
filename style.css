@@ -1,1 +1,492 @@
-mm
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header{
+    width:100%;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(0,51,102,.95);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:55px;
+    margin-right:12px;
+}
+
+.logo h2{
+    color:white;
+    font-size:26px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.hero-text{
+
+    color:white;
+
+}
+
+.hero-text h1{
+
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    font-size:22px;
+    margin-bottom:35px;
+
+}
+
+.hero button,
+.btn{
+
+    background:#FFD700;
+    color:#003366;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.hero button:hover,
+.btn:hover{
+
+    background:white;
+    transform:scale(1.05);
+
+}
+
+/* =========================
+   REGISTER & LOGIN
+========================= */
+
+#register-section,
+#login-section{
+
+    display:none;
+
+    padding:100px 20px;
+
+}
+
+.card{
+
+    width:450px;
+    max-width:95%;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.card h2{
+
+    text-align:center;
+    color:#003366;
+    margin-bottom:25px;
+
+}
+
+.card input,
+.card select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+.card button{
+
+    width:100%;
+
+    background:#003366;
+
+    color:white;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    margin-top:20px;
+
+    cursor:pointer;
+
+}
+
+.card button:hover{
+
+    background:#0055aa;
+
+}
+/* =========================
+   HOME SECTION
+========================= */
+
+#home{
+    padding:80px 10%;
+    text-align:center;
+    background:#ffffff;
+}
+
+.home-banner h1{
+    font-size:45px;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.home-banner p{
+    font-size:20px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about{
+    padding:80px 10%;
+    background:#f4f7fa;
+}
+
+#about h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:40px;
+}
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.about-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-10px);
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+#services{
+    padding:80px 10%;
+    background:white;
+}
+
+#services h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:40px;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.course-card{
+    background:#003366;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+    text-align:center;
+}
+
+.course-card:hover{
+    background:#FFD700;
+    color:#003366;
+    transform:scale(1.05);
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+#stats{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:70px 10%;
+    background:#003366;
+    color:white;
+    text-align:center;
+}
+
+.stat h1{
+    font-size:50px;
+    color:#FFD700;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+#testimonials{
+    padding:80px 10%;
+    background:#f5f7fa;
+    text-align:center;
+}
+
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    max-width:700px;
+    margin:20px auto;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+#gallery{
+    padding:80px 10%;
+    background:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.08);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact{
+    padding:80px 10%;
+    background:#f4f7fa;
+}
+
+#contact h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:30px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.contact-form button{
+    background:#003366;
+    color:white;
+    padding:15px;
+    width:100%;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#FFD700;
+    color:#003366;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#001f4d;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.social-links{
+    margin:20px 0;
+}
+
+.social-links a{
+    color:#FFD700;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.social-links a:hover{
+    color:white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+#stats{
+    flex-direction:column;
+}
+
+}
